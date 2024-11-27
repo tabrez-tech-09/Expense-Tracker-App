@@ -1,0 +1,109 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+html,body {
+height: 100%;
+width: 100%;
+}
+h1 ,h2 {
+    margin: 20px;
+    text-align: center;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.input-section label{
+    font-weight: bold;
+    margin: 10px;
+}
+.input-section input[type ="number"] , .input-section input[type="Date"]{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.input-section button:hover{
+    background-color: black;
+}
+.Expense-List{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th , td {
+    border: 1px solid ;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #4c4c4c;
+    color: white;
+}
+tfoot td{
+font-weight: bold;
+}
+
+
+.delete-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color: red;
+}
+
+
+/* responsive des*/
+
+
+@media (max-width: 480px) {
+    html,body {
+        position: fixed;
+        }
+    h1 ,h2 {
+        margin: 10px;
+    }
+    .input-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-section button{
+        margin-top: 10px;
+    }
+    #amount-input{
+        width: 130px;
+    }
+    
+    table{
+        width:70%;
+        border-collapse: collapse;
+        margin-left: 20px;
+    }
+    .Expense-List{
+        font-size: small;
+    }
+    
+}
