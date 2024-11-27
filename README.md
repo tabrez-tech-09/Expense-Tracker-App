@@ -2,8 +2,7 @@
 A simple web application to track daily expenses.
 
 ### DEMO
-url(https://expensetrackerapp07.netlify.app)
-
+[Live Demo](https://expensetrackerapp07.netlify.app)
 
 ##  Features
 
